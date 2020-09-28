@@ -1,4 +1,4 @@
-Commands
+Commands:
 ```
 consul agent -dev
 
@@ -15,6 +15,8 @@ curl http://localhost:8080/_ping
 while (true) do; curl http://localhost:8080; sleep 0.1; done
 
 watch docker ps
+
+dig @127.0.0.1 -p 8600 -t srv example.service.consul
 
 watch "echo "show servers state http_back" | nc localhost 9000"
 ```
